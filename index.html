@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP.GG Clone - League of Legends Stats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#"><img src="assets/images/logo.png" alt="OP.GG Logo" id="logo-placeholder"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Champions</a></li>
+                    <li><a href="#">Leaderboards</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">Pro Builds</a></li>
+                    <li><a href="#">Multi-Search</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button class="login-btn">Login</button>
+                <select class="region-select">
+                    <option value="na">NA</option>
+                    <option value="euw">EUW</option>
+                    <option value="kr">KR</option>
+                    <option value="jp">JP</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="search-container">
+                <h1>League of Legends Stats, Builds, Runes, and Counters</h1>
+                <div class="search-box">
+                    <select class="region-select-search">
+                        <option value="na">NA</option>
+                        <option value="euw">EUW</option>
+                        <option value="kr">KR</option>
+                        <option value="jp">JP</option>
+                    </select>
+                    <input type="text" placeholder="Search summoner name...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-champions">
+            <div class="section-header">
+                <h2>Featured Champions</h2>
+                <div class="tabs">
+                    <button class="tab active" data-role="top">Top</button>
+                    <button class="tab" data-role="jungle">Jungle</button>
+                    <button class="tab" data-role="mid">Mid</button>
+                    <button class="tab" data-role="adc">ADC</button>
+                    <button class="tab" data-role="support">Support</button>
+                </div>
+            </div>
+            <div class="champions-grid" id="champions-container">
+                <!-- Champions will be populated by JavaScript -->
+                <div class="loading">Loading champions...</div>
+            </div>
+        </section>
+
+        <section class="live-games">
+            <div class="section-header">
+                <h2>Live Games</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="live-games-container" id="live-games-container">
+                <!-- Live games will be populated by JavaScript -->
+                <div class="loading">Loading live games...</div>
+            </div>
+        </section>
+
+        <section class="pro-players">
+            <div class="section-header">
+                <h2>Pro Players</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="pro-players-container" id="pro-players-container">
+                <!-- Pro players will be populated by JavaScript -->
+                <div class="loading">Loading pro players...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="OP.GG Logo" id="footer-logo-placeholder">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About OP.GG</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> 2025 OP.GG Clone. This is a demo site for educational purposes only.</p>
+            <p>This site is not affiliated with Riot Games or League of Legends.</p>
+        </div>
+    </footer>
+
+    <!-- Load API service first -->
+    <script src="assets/js/browser-api-service.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
